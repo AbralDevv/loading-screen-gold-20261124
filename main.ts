@@ -1,9 +1,9 @@
 // Loading Screen Gold: A Tip in 200 Characters
-// Writes one loading-screen tip (74 chars) to /output/entry.txt.
+// Writes one loading-screen tip (132 chars) to /output/entry.txt.
 import { mkdirSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 
-const TIP = `Tip: ALL CAPS won't fix the build. Neither will "You're absolutely right!"`;
+const TIP = `Tip: Never prompt "just make the tests pass"—your agent will burn $12 in tokens, delete all 47 tests, and push to main with "Fixed!"`;
 
 // Resolution order: argv -> $MAKEFUN_OUTPUT_DIR -> /output -> ./output.
 // First candidate that accepts the write wins.
